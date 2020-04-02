@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98CAFF802436A05700EF4CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */; };
+		98CAFF822436A05700EF4CDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF812436A05700EF4CDC /* SceneDelegate.swift */; };
+		98CAFF842436A05700EF4CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF832436A05700EF4CDC /* ViewController.swift */; };
+		98CAFF872436A05700EF4CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF852436A05700EF4CDC /* Main.storyboard */; };
+		98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */; };
+		98CAFF8C2436A05900EF4CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8B2436A05900EF4CDC /* Assets.xcassets */; };
+		98CAFF8F2436A05900EF4CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */; };
+		98CAFF9A2436A05900EF4CDC /* mapd_ioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF992436A05900EF4CDC /* mapd_ioTests.swift */; };
+		98CAFFA52436A05900EF4CDC /* mapd_ioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFFA42436A05900EF4CDC /* mapd_ioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98CAFF962436A05900EF4CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98CAFF742436A05700EF4CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CAFF7B2436A05700EF4CDC;
+			remoteInfo = "mapd-io";
+		};
+		98CAFFA12436A05900EF4CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98CAFF742436A05700EF4CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CAFF7B2436A05700EF4CDC;
+			remoteInfo = "mapd-io";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98CAFF7C2436A05700EF4CDC /* mapd-io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapd-io.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98CAFF812436A05700EF4CDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98CAFF832436A05700EF4CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98CAFF862436A05700EF4CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98CAFF892436A05700EF4CDC /* mapd_io.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mapd_io.xcdatamodel; sourceTree = "<group>"; };
+		98CAFF8B2436A05900EF4CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98CAFF8E2436A05900EF4CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98CAFF902436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CAFF952436A05900EF4CDC /* mapd-ioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapd-ioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CAFF992436A05900EF4CDC /* mapd_ioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapd_ioTests.swift; sourceTree = "<group>"; };
+		98CAFF9B2436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CAFFA02436A05900EF4CDC /* mapd-ioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapd-ioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CAFFA42436A05900EF4CDC /* mapd_ioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapd_ioUITests.swift; sourceTree = "<group>"; };
+		98CAFFA62436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98CAFF792436A05700EF4CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CAFF922436A05900EF4CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CAFF9D2436A05900EF4CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98CAFF732436A05700EF4CDC = {
+			isa = PBXGroup;
+			children = (
+				98CAFF7E2436A05700EF4CDC /* mapd-io */,
+				98CAFF982436A05900EF4CDC /* mapd-ioTests */,
+				98CAFFA32436A05900EF4CDC /* mapd-ioUITests */,
+				98CAFF7D2436A05700EF4CDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98CAFF7D2436A05700EF4CDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98CAFF7C2436A05700EF4CDC /* mapd-io.app */,
+				98CAFF952436A05900EF4CDC /* mapd-ioTests.xctest */,
+				98CAFFA02436A05900EF4CDC /* mapd-ioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98CAFF7E2436A05700EF4CDC /* mapd-io */ = {
+			isa = PBXGroup;
+			children = (
+				98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */,
+				98CAFF812436A05700EF4CDC /* SceneDelegate.swift */,
+				98CAFF832436A05700EF4CDC /* ViewController.swift */,
+				98CAFF852436A05700EF4CDC /* Main.storyboard */,
+				98CAFF8B2436A05900EF4CDC /* Assets.xcassets */,
+				98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */,
+				98CAFF902436A05900EF4CDC /* Info.plist */,
+				98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */,
+			);
+			path = "mapd-io";
+			sourceTree = "<group>";
+		};
+		98CAFF982436A05900EF4CDC /* mapd-ioTests */ = {
+			isa = PBXGroup;
+			children = (
+				98CAFF992436A05900EF4CDC /* mapd_ioTests.swift */,
+				98CAFF9B2436A05900EF4CDC /* Info.plist */,
+			);
+			path = "mapd-ioTests";
+			sourceTree = "<group>";
+		};
+		98CAFFA32436A05900EF4CDC /* mapd-ioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98CAFFA42436A05900EF4CDC /* mapd_ioUITests.swift */,
+				98CAFFA62436A05900EF4CDC /* Info.plist */,
+			);
+			path = "mapd-ioUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98CAFF7B2436A05700EF4CDC /* mapd-io */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CAFFA92436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-io" */;
+			buildPhases = (
+				98CAFF782436A05700EF4CDC /* Sources */,
+				98CAFF792436A05700EF4CDC /* Frameworks */,
+				98CAFF7A2436A05700EF4CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mapd-io";
+			productName = "mapd-io";
+			productReference = 98CAFF7C2436A05700EF4CDC /* mapd-io.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98CAFF942436A05900EF4CDC /* mapd-ioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CAFFAC2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioTests" */;
+			buildPhases = (
+				98CAFF912436A05900EF4CDC /* Sources */,
+				98CAFF922436A05900EF4CDC /* Frameworks */,
+				98CAFF932436A05900EF4CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CAFF972436A05900EF4CDC /* PBXTargetDependency */,
+			);
+			name = "mapd-ioTests";
+			productName = "mapd-ioTests";
+			productReference = 98CAFF952436A05900EF4CDC /* mapd-ioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98CAFF9F2436A05900EF4CDC /* mapd-ioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CAFFAF2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioUITests" */;
+			buildPhases = (
+				98CAFF9C2436A05900EF4CDC /* Sources */,
+				98CAFF9D2436A05900EF4CDC /* Frameworks */,
+				98CAFF9E2436A05900EF4CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CAFFA22436A05900EF4CDC /* PBXTargetDependency */,
+			);
+			name = "mapd-ioUITests";
+			productName = "mapd-ioUITests";
+			productReference = 98CAFFA02436A05900EF4CDC /* mapd-ioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98CAFF742436A05700EF4CDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Josh Tully";
+				TargetAttributes = {
+					98CAFF7B2436A05700EF4CDC = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					98CAFF942436A05900EF4CDC = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 98CAFF7B2436A05700EF4CDC;
+					};
+					98CAFF9F2436A05900EF4CDC = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 98CAFF7B2436A05700EF4CDC;
+					};
+				};
+			};
+			buildConfigurationList = 98CAFF772436A05700EF4CDC /* Build configuration list for PBXProject "mapd-io" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98CAFF732436A05700EF4CDC;
+			productRefGroup = 98CAFF7D2436A05700EF4CDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98CAFF7B2436A05700EF4CDC /* mapd-io */,
+				98CAFF942436A05900EF4CDC /* mapd-ioTests */,
+				98CAFF9F2436A05900EF4CDC /* mapd-ioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98CAFF7A2436A05700EF4CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CAFF8F2436A05900EF4CDC /* LaunchScreen.storyboard in Resources */,
+				98CAFF8C2436A05900EF4CDC /* Assets.xcassets in Resources */,
+				98CAFF872436A05700EF4CDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CAFF932436A05900EF4CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CAFF9E2436A05900EF4CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98CAFF782436A05700EF4CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CAFF842436A05700EF4CDC /* ViewController.swift in Sources */,
+				98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */,
+				98CAFF802436A05700EF4CDC /* AppDelegate.swift in Sources */,
+				98CAFF822436A05700EF4CDC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CAFF912436A05900EF4CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CAFF9A2436A05900EF4CDC /* mapd_ioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CAFF9C2436A05900EF4CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CAFFA52436A05900EF4CDC /* mapd_ioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98CAFF972436A05900EF4CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98CAFF7B2436A05700EF4CDC /* mapd-io */;
+			targetProxy = 98CAFF962436A05900EF4CDC /* PBXContainerItemProxy */;
+		};
+		98CAFFA22436A05900EF4CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98CAFF7B2436A05700EF4CDC /* mapd-io */;
+			targetProxy = 98CAFFA12436A05900EF4CDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98CAFF852436A05700EF4CDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98CAFF862436A05700EF4CDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98CAFF8E2436A05900EF4CDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98CAFFA72436A05900EF4CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98CAFFA82436A05900EF4CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98CAFFAA2436A05900EF4CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mapd-io/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-io";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98CAFFAB2436A05900EF4CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mapd-io/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-io";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98CAFFAD2436A05900EF4CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mapd-ioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapd-io.app/mapd-io";
+			};
+			name = Debug;
+		};
+		98CAFFAE2436A05900EF4CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mapd-ioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapd-io.app/mapd-io";
+			};
+			name = Release;
+		};
+		98CAFFB02436A05900EF4CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mapd-ioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mapd-io";
+			};
+			name = Debug;
+		};
+		98CAFFB12436A05900EF4CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mapd-ioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mapd-io";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98CAFF772436A05700EF4CDC /* Build configuration list for PBXProject "mapd-io" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CAFFA72436A05900EF4CDC /* Debug */,
+				98CAFFA82436A05900EF4CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CAFFA92436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-io" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CAFFAA2436A05900EF4CDC /* Debug */,
+				98CAFFAB2436A05900EF4CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CAFFAC2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CAFFAD2436A05900EF4CDC /* Debug */,
+				98CAFFAE2436A05900EF4CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CAFFAF2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CAFFB02436A05900EF4CDC /* Debug */,
+				98CAFFB12436A05900EF4CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				98CAFF892436A05700EF4CDC /* mapd_io.xcdatamodel */,
+			);
+			currentVersion = 98CAFF892436A05700EF4CDC /* mapd_io.xcdatamodel */;
+			path = mapd_io.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 98CAFF742436A05700EF4CDC /* Project object */;
+}
