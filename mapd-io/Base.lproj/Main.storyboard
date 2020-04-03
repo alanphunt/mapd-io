@@ -15,23 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8f-tR-Yqn">
+                            <tabBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8f-tR-Yqn">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="6zP-AE-OIT"/>
+                                </constraints>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="qpB-kn-t5A"/>
-                                    <tabBarItem systemItem="more" id="PHr-8i-1H5"/>
+                                    <tabBarItem title="Details" image="info.circle" catalog="system" id="qpB-kn-t5A"/>
+                                    <tabBarItem title="Events" image="calendar" catalog="system" id="PHr-8i-1H5"/>
+                                    <tabBarItem title="Profile" image="person" catalog="system" id="rqc-ly-26J"/>
                                 </items>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X8f-tR-Yqn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ELH-2M-U8L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
 </document>

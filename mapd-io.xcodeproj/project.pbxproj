@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27E8336087013E56F74FC6F1 /* libPods-mapd-io.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6AB9F8A71BB5D218849DF5 /* libPods-mapd-io.a */; };
 		98CAFF802436A05700EF4CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */; };
 		98CAFF822436A05700EF4CDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF812436A05700EF4CDC /* SceneDelegate.swift */; };
 		98CAFF842436A05700EF4CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF832436A05700EF4CDC /* ViewController.swift */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42A321C02C74DC23820FC70F /* Pods-mapd-io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapd-io.release.xcconfig"; path = "Target Support Files/Pods-mapd-io/Pods-mapd-io.release.xcconfig"; sourceTree = "<group>"; };
+		5DD056F59D5A171E6E2D6810 /* Pods-mapd-io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapd-io.debug.xcconfig"; path = "Target Support Files/Pods-mapd-io/Pods-mapd-io.debug.xcconfig"; sourceTree = "<group>"; };
+		7F6AB9F8A71BB5D218849DF5 /* libPods-mapd-io.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapd-io.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CAFF7C2436A05700EF4CDC /* mapd-io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapd-io.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98CAFF812436A05700EF4CDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E8336087013E56F74FC6F1 /* libPods-mapd-io.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7846A9E7AD33142C02A0EC0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6AB9F8A71BB5D218849DF5 /* libPods-mapd-io.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98CAFF732436A05700EF4CDC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				98CAFF982436A05900EF4CDC /* mapd-ioTests */,
 				98CAFFA32436A05900EF4CDC /* mapd-ioUITests */,
 				98CAFF7D2436A05700EF4CDC /* Products */,
+				D5D69D6424C903D32CCF1852 /* Pods */,
+				7846A9E7AD33142C02A0EC0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +146,15 @@
 			path = "mapd-ioUITests";
 			sourceTree = "<group>";
 		};
+		D5D69D6424C903D32CCF1852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DD056F59D5A171E6E2D6810 /* Pods-mapd-io.debug.xcconfig */,
+				42A321C02C74DC23820FC70F /* Pods-mapd-io.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98CAFFA92436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-io" */;
 			buildPhases = (
+				2257733227852824B136385D /* [CP] Check Pods Manifest.lock */,
 				98CAFF782436A05700EF4CDC /* Sources */,
 				98CAFF792436A05700EF4CDC /* Frameworks */,
 				98CAFF7A2436A05700EF4CDC /* Resources */,
+				0A5946FE9DBD4FC52DD8FBBA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +282,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5946FE9DBD4FC52DD8FBBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapd-io/Pods-mapd-io-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapd-io/Pods-mapd-io-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mapd-io/Pods-mapd-io-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2257733227852824B136385D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mapd-io-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98CAFF782436A05700EF4CDC /* Sources */ = {
@@ -436,6 +504,7 @@
 		};
 		98CAFFAA2436A05900EF4CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD056F59D5A171E6E2D6810 /* Pods-mapd-io.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +522,7 @@
 		};
 		98CAFFAB2436A05900EF4CDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A321C02C74DC23820FC70F /* Pods-mapd-io.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
