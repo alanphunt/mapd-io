@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UITabBarController, CLLocationManagerDelegate {
 
     var locationManager: CLLocationManager?
     var loc: CLLocation?
