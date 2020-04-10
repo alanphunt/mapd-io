@@ -15,26 +15,7 @@
 		98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */; };
 		98CAFF8C2436A05900EF4CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8B2436A05900EF4CDC /* Assets.xcassets */; };
 		98CAFF8F2436A05900EF4CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */; };
-		98CAFF9A2436A05900EF4CDC /* mapd_ioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF992436A05900EF4CDC /* mapd_ioTests.swift */; };
-		98CAFFA52436A05900EF4CDC /* mapd_ioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFFA42436A05900EF4CDC /* mapd_ioUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		98CAFF962436A05900EF4CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 98CAFF742436A05700EF4CDC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98CAFF7B2436A05700EF4CDC;
-			remoteInfo = "mapd-io";
-		};
-		98CAFFA12436A05900EF4CDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 98CAFF742436A05700EF4CDC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98CAFF7B2436A05700EF4CDC;
-			remoteInfo = "mapd-io";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		42A321C02C74DC23820FC70F /* Pods-mapd-io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapd-io.release.xcconfig"; path = "Target Support Files/Pods-mapd-io/Pods-mapd-io.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,12 +30,6 @@
 		98CAFF8B2436A05900EF4CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CAFF8E2436A05900EF4CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CAFF902436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98CAFF952436A05900EF4CDC /* mapd-ioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapd-ioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98CAFF992436A05900EF4CDC /* mapd_ioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapd_ioTests.swift; sourceTree = "<group>"; };
-		98CAFF9B2436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98CAFFA02436A05900EF4CDC /* mapd-ioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapd-ioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98CAFFA42436A05900EF4CDC /* mapd_ioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapd_ioUITests.swift; sourceTree = "<group>"; };
-		98CAFFA62436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,20 +38,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E8336087013E56F74FC6F1 /* libPods-mapd-io.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98CAFF922436A05900EF4CDC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98CAFF9D2436A05900EF4CDC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				98CAFF7E2436A05700EF4CDC /* mapd-io */,
-				98CAFF982436A05900EF4CDC /* mapd-ioTests */,
-				98CAFFA32436A05900EF4CDC /* mapd-ioUITests */,
 				98CAFF7D2436A05700EF4CDC /* Products */,
 				D5D69D6424C903D32CCF1852 /* Pods */,
 				7846A9E7AD33142C02A0EC0B /* Frameworks */,
@@ -107,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				98CAFF7C2436A05700EF4CDC /* mapd-io.app */,
-				98CAFF952436A05900EF4CDC /* mapd-ioTests.xctest */,
-				98CAFFA02436A05900EF4CDC /* mapd-ioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,24 +83,6 @@
 				98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */,
 			);
 			path = "mapd-io";
-			sourceTree = "<group>";
-		};
-		98CAFF982436A05900EF4CDC /* mapd-ioTests */ = {
-			isa = PBXGroup;
-			children = (
-				98CAFF992436A05900EF4CDC /* mapd_ioTests.swift */,
-				98CAFF9B2436A05900EF4CDC /* Info.plist */,
-			);
-			path = "mapd-ioTests";
-			sourceTree = "<group>";
-		};
-		98CAFFA32436A05900EF4CDC /* mapd-ioUITests */ = {
-			isa = PBXGroup;
-			children = (
-				98CAFFA42436A05900EF4CDC /* mapd_ioUITests.swift */,
-				98CAFFA62436A05900EF4CDC /* Info.plist */,
-			);
-			path = "mapd-ioUITests";
 			sourceTree = "<group>";
 		};
 		D5D69D6424C903D32CCF1852 /* Pods */ = {
@@ -177,42 +116,6 @@
 			productReference = 98CAFF7C2436A05700EF4CDC /* mapd-io.app */;
 			productType = "com.apple.product-type.application";
 		};
-		98CAFF942436A05900EF4CDC /* mapd-ioTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98CAFFAC2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioTests" */;
-			buildPhases = (
-				98CAFF912436A05900EF4CDC /* Sources */,
-				98CAFF922436A05900EF4CDC /* Frameworks */,
-				98CAFF932436A05900EF4CDC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98CAFF972436A05900EF4CDC /* PBXTargetDependency */,
-			);
-			name = "mapd-ioTests";
-			productName = "mapd-ioTests";
-			productReference = 98CAFF952436A05900EF4CDC /* mapd-ioTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		98CAFF9F2436A05900EF4CDC /* mapd-ioUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98CAFFAF2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioUITests" */;
-			buildPhases = (
-				98CAFF9C2436A05900EF4CDC /* Sources */,
-				98CAFF9D2436A05900EF4CDC /* Frameworks */,
-				98CAFF9E2436A05900EF4CDC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98CAFFA22436A05900EF4CDC /* PBXTargetDependency */,
-			);
-			name = "mapd-ioUITests";
-			productName = "mapd-ioUITests";
-			productReference = 98CAFFA02436A05900EF4CDC /* mapd-ioUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,14 +128,6 @@
 				TargetAttributes = {
 					98CAFF7B2436A05700EF4CDC = {
 						CreatedOnToolsVersion = 11.4;
-					};
-					98CAFF942436A05900EF4CDC = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = 98CAFF7B2436A05700EF4CDC;
-					};
-					98CAFF9F2436A05900EF4CDC = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = 98CAFF7B2436A05700EF4CDC;
 					};
 				};
 			};
@@ -250,8 +145,6 @@
 			projectRoot = "";
 			targets = (
 				98CAFF7B2436A05700EF4CDC /* mapd-io */,
-				98CAFF942436A05900EF4CDC /* mapd-ioTests */,
-				98CAFF9F2436A05900EF4CDC /* mapd-ioUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,20 +157,6 @@
 				98CAFF8F2436A05900EF4CDC /* LaunchScreen.storyboard in Resources */,
 				98CAFF8C2436A05900EF4CDC /* Assets.xcassets in Resources */,
 				98CAFF872436A05700EF4CDC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98CAFF932436A05900EF4CDC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98CAFF9E2436A05900EF4CDC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,36 +216,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98CAFF912436A05900EF4CDC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98CAFF9A2436A05900EF4CDC /* mapd_ioTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98CAFF9C2436A05900EF4CDC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98CAFFA52436A05900EF4CDC /* mapd_ioUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		98CAFF972436A05900EF4CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 98CAFF7B2436A05700EF4CDC /* mapd-io */;
-			targetProxy = 98CAFF962436A05900EF4CDC /* PBXContainerItemProxy */;
-		};
-		98CAFFA22436A05900EF4CDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 98CAFF7B2436A05700EF4CDC /* mapd-io */;
-			targetProxy = 98CAFFA12436A05900EF4CDC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		98CAFF852436A05700EF4CDC /* Main.storyboard */ = {
@@ -509,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "mapd-io/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,6 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "mapd-io/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,86 +387,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		98CAFFAD2436A05900EF4CDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "mapd-ioTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapd-io.app/mapd-io";
-			};
-			name = Debug;
-		};
-		98CAFFAE2436A05900EF4CDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "mapd-ioTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapd-io.app/mapd-io";
-			};
-			name = Release;
-		};
-		98CAFFB02436A05900EF4CDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "mapd-ioUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "mapd-io";
-			};
-			name = Debug;
-		};
-		98CAFFB12436A05900EF4CDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "mapd-ioUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.ilstu.jdtully.mapd-ioUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "mapd-io";
 			};
 			name = Release;
 		};
@@ -635,24 +407,6 @@
 			buildConfigurations = (
 				98CAFFAA2436A05900EF4CDC /* Debug */,
 				98CAFFAB2436A05900EF4CDC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		98CAFFAC2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98CAFFAD2436A05900EF4CDC /* Debug */,
-				98CAFFAE2436A05900EF4CDC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		98CAFFAF2436A05900EF4CDC /* Build configuration list for PBXNativeTarget "mapd-ioUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98CAFFB02436A05900EF4CDC /* Debug */,
-				98CAFFB12436A05900EF4CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
