@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:mapd-io.xcodeproj">
+      location = "group:/Users/aphunt/Desktop/mapdio2/mapd-io/mapd-io/Models">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
