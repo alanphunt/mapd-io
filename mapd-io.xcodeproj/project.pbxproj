@@ -19,6 +19,7 @@
 		98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */; };
 		98CAFF8C2436A05900EF4CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8B2436A05900EF4CDC /* Assets.xcassets */; };
 		98CAFF8F2436A05900EF4CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */; };
+		98D32FC224492B7A00AC6612 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D32FC124492B7A00AC6612 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		98CAFF8B2436A05900EF4CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CAFF8E2436A05900EF4CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CAFF902436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D32FC124492B7A00AC6612 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */,
 				98CAFF812436A05700EF4CDC /* SceneDelegate.swift */,
 				98CAFF832436A05700EF4CDC /* ViewController.swift */,
+				98D32FC124492B7A00AC6612 /* MapViewController.swift */,
 				98CAFF852436A05700EF4CDC /* Main.storyboard */,
 				98CAFF8B2436A05900EF4CDC /* Assets.xcassets */,
 				98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */,
@@ -225,6 +228,7 @@
 				98CAFF842436A05700EF4CDC /* ViewController.swift in Sources */,
 				019882792441076000B6B4D6 /* TableViewController.swift in Sources */,
 				98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */,
+				98D32FC224492B7A00AC6612 /* MapViewController.swift in Sources */,
 				0198827B2441088D00B6B4D6 /* SettingsController.swift in Sources */,
 				98CAFF802436A05700EF4CDC /* AppDelegate.swift in Sources */,
 				98CAFF822436A05700EF4CDC /* SceneDelegate.swift in Sources */,

@@ -15,29 +15,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPM-8s-R7b">
-                                <rect key="frame" x="186" y="222" width="42" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Wh5-EI-Hc4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htC-Xu-DJ0">
+                                <rect key="frame" x="0.0" y="0.0" width="425" height="907"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCy-no-Yjs">
-                                <rect key="frame" x="157" y="586" width="105" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Get Started">
-                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="05f-MV-Hv8">
+                                    <rect key="frame" x="0.0" y="0.0" width="425" height="907"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="SvP-9A-2yG">
+                                <rect key="frame" x="80.5" y="133" width="253" height="251"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SvP-9A-2yG" secondAttribute="bottom" constant="478" id="0kw-Yk-xdF"/>
+                            <constraint firstItem="SvP-9A-2yG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80.5" id="4YU-DG-mAf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SvP-9A-2yG" secondAttribute="trailing" constant="80.5" id="DUz-mL-iBj"/>
+                            <constraint firstAttribute="bottom" secondItem="Wh5-EI-Hc4" secondAttribute="bottom" id="GB6-5Q-Ds9"/>
+                            <constraint firstItem="Wh5-EI-Hc4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ehf-us-5pw"/>
+                            <constraint firstItem="SvP-9A-2yG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="fND-gn-fmy"/>
+                            <constraint firstItem="Wh5-EI-Hc4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="g17-QE-ehf"/>
+                            <constraint firstItem="Wh5-EI-Hc4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gN2-XQ-1Su"/>
+                            <constraint firstItem="Wh5-EI-Hc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lhF-UP-G6R"/>
+                            <constraint firstItem="Wh5-EI-Hc4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s3q-bY-Gej"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppIcon" width="100" height="100"/>
+        <image name="Image" width="696" height="483"/>
+    </resources>
 </document>
