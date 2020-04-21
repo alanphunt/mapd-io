@@ -42,8 +42,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.requestAlwaysAuthorization()
-
-       
+        
+        
         // The myLocation attribute of the mapView may be null
         if let mylocation = mapView.myLocation {
           print("User's location: \(mylocation)")
