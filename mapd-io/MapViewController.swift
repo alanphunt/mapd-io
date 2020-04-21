@@ -11,14 +11,27 @@ import GoogleMaps
 import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
-
+    
     var locationManager: CLLocationManager?
     var loc: CLLocation?
     @IBOutlet weak var viewForGMap: UIView!
     
-
+    @IBOutlet weak var eventTitle: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var startTime: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let df = DateFormatter()
+        df.dateFormat = "MM.dd.yyyy"
+        let cem = CalendarEventsManager.cem.events
+        
+        self.eventTitle.text = cem[0].summary
+        self.location.text = cem[0].location
+        
+        self.startTime.text =  df.string(for: cem[0].start.dateTime)
+        
+        
         // Do any additional setup after loading the view.
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
@@ -53,6 +66,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
 
     }
+    
 
 
 

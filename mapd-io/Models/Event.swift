@@ -10,13 +10,12 @@ import Foundation
 
 struct Event{
     
-    var location:String?
+    var location:String
     var summary:String
-    var description:String?
+    var description:String
     var start:StartTime
     var end:EndTime
     var creator:Creator
-    var attendees:[Attendee]
 
 }
 
@@ -28,6 +27,5 @@ extension Event: Decodable{
         case creator
         case start
         case end
-        case attendees
     }
 }

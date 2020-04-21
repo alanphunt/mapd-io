@@ -10,6 +10,8 @@
 		019882772440F6F200B6B4D6 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019882762440F6F200B6B4D6 /* EventDetailController.swift */; };
 		019882792441076000B6B4D6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019882782441076000B6B4D6 /* TableViewController.swift */; };
 		0198827B2441088D00B6B4D6 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198827A2441088D00B6B4D6 /* SettingsController.swift */; };
+		01CAA2E2244E80AE00310FAA /* CalendarEventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAA2E1244E80AE00310FAA /* CalendarEventsManager.swift */; };
+		01CAA2E4244EA07400310FAA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAA2E3244EA07400310FAA /* TableViewCell.swift */; };
 		01CEF7B42449600F00D75F9E /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B32449600F00D75F9E /* Attendee.swift */; };
 		01CEF7B62449601800D75F9E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B52449601800D75F9E /* Event.swift */; };
 		01CEF7B82449602800D75F9E /* StartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B72449602800D75F9E /* StartTime.swift */; };
@@ -31,6 +33,8 @@
 		019882762440F6F200B6B4D6 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
 		019882782441076000B6B4D6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0198827A2441088D00B6B4D6 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		01CAA2E1244E80AE00310FAA /* CalendarEventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventsManager.swift; sourceTree = "<group>"; };
+		01CAA2E3244EA07400310FAA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		01CEF7B32449600F00D75F9E /* Attendee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendee.swift; sourceTree = "<group>"; };
 		01CEF7B52449601800D75F9E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		01CEF7B72449602800D75F9E /* StartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTime.swift; sourceTree = "<group>"; };
@@ -116,9 +120,11 @@
 				98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */,
 				98CAFF902436A05900EF4CDC /* Info.plist */,
 				98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */,
+				01CAA2E3244EA07400310FAA /* TableViewCell.swift */,
 				019882762440F6F200B6B4D6 /* EventDetailController.swift */,
 				019882782441076000B6B4D6 /* TableViewController.swift */,
 				0198827A2441088D00B6B4D6 /* SettingsController.swift */,
+				01CAA2E1244E80AE00310FAA /* CalendarEventsManager.swift */,
 			);
 			path = "mapd-io";
 			sourceTree = "<group>";
@@ -248,12 +254,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CAFF842436A05700EF4CDC /* ViewController.swift in Sources */,
+				01CAA2E4244EA07400310FAA /* TableViewCell.swift in Sources */,
 				019882792441076000B6B4D6 /* TableViewController.swift in Sources */,
 				98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */,
 				98D32FC224492B7A00AC6612 /* MapViewController.swift in Sources */,
 				01CEF7BE2449607A00D75F9E /* CalendarAPIData.swift in Sources */,
 				01CEF7B62449601800D75F9E /* Event.swift in Sources */,
 				01CEF7B82449602800D75F9E /* StartTime.swift in Sources */,
+				01CAA2E2244E80AE00310FAA /* CalendarEventsManager.swift in Sources */,
 				01CEF7BC2449606B00D75F9E /* Creator.swift in Sources */,
 				0198827B2441088D00B6B4D6 /* SettingsController.swift in Sources */,
 				98CAFF802436A05700EF4CDC /* AppDelegate.swift in Sources */,
