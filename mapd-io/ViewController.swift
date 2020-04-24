@@ -8,6 +8,8 @@
 
 import UIKit
 
+//hello
+
 class ViewController: UITabBarController {
 
     override func viewDidLoad(){
@@ -24,8 +26,6 @@ class ViewController: UITabBarController {
 
            URLSession.shared.dataTask(with: url) { (data, res, err) in
                 if let data = data{
-                    let df = DateFormatter()
-                    df.timeStyle = .medium
                     let decoder = JSONDecoder()
                     decoder.dateDecodingStrategy = .iso8601
                     do{

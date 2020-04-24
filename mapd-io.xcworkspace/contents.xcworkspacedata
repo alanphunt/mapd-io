@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TestLocation1.gpx">
+   </FileRef>
+   <FileRef
       location = "group:mapd-io.xcodeproj">
    </FileRef>
    <FileRef

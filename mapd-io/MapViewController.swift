@@ -10,24 +10,19 @@ import UIKit
 import GoogleMaps
 import CoreLocation
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController {
 
-    var locationManager: CLLocationManager?
-    var loc: CLLocation?
+    let locationManager = CLLocationManager()
+    var location: CLLocation? = nil
     @IBOutlet weak var viewForGMap: UIView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
         let camera = GMSCameraPosition.camera(withLatitude: 40.508681, longitude: -88.991202, zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: self.viewForGMap.frame, camera: camera)
         mapView.settings.myLocationButton = true
         self.view.addSubview(mapView)
-
-
 
         mapView.isMyLocationEnabled = true
 
@@ -39,31 +34,54 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //        marker.map = mapView
 
         //location services
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        locationManager?.requestAlwaysAuthorization()
-
-       
-        // The myLocation attribute of the mapView may be null
-        if let mylocation = mapView.myLocation {
-          print("User's location: \(mylocation)")
-        } else {
-          print("User's location is unknown")
+        locationManager.delegate = self
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
         }
-
-
+        
     }
 
+}
 
-
+extension MapViewController: CLLocationManagerDelegate {
+    // called when the authorization status is changed for the core location permission
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedAlways {
+        print("location manager authorization status changed")
+        
+        switch status {
+        case .authorizedAlways:
+            print("user allow app to get location data when app is active or in background")
             if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
                 if CLLocationManager.isRangingAvailable() {
                 }
             }
+        case .authorizedWhenInUse:
+            return
+        case .denied:
+            // show alert that location is needed?
+            return
+        case .restricted:
+            return
+        case .notDetermined:
+            locationManager.requestAlwaysAuthorization()
+            return
+        default:
+            return
         }
     }
-
-
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+       if let location = locations.last {
+           print(location.coordinate, "Coordinate")
+           print(location.horizontalAccuracy, "Coordinate Accuracy")
+           print(location.course, "Course")
+           print(location.speed, "Speed")
+           print(location.timestamp, "Timestamp")
+           
+           self.location = location
+       }
+   }
 }
