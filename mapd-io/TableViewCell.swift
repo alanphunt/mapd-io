@@ -12,6 +12,9 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var location: UILabel!
+    
+    @IBOutlet weak var startTime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

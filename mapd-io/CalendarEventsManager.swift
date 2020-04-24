@@ -12,6 +12,7 @@ class CalendarEventsManager{
     static let cem = CalendarEventsManager()
     
     var events: [Event] = []
+    var pastEvents: [Event] = []
     
     func getJson(completion: @escaping (CalendarAPIData) -> ()){
         let url = URL(string: "https://www.googleapis.com/calendar/v3/calendars/mapdio358@gmail.com/events?key=AIzaSyC1s0Z-fmBf2cLX1Ho7_nVs8XHdb4xkA88")!
