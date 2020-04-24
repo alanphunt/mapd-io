@@ -10,9 +10,12 @@ import UIKit
 
 class EventDetailController: UIViewController{
     
+    @IBOutlet weak var summary: UILabel!
+    var event:Event?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        summary.text = event?.description
         
     }
     
