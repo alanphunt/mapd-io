@@ -10,8 +10,7 @@
 		019882772440F6F200B6B4D6 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019882762440F6F200B6B4D6 /* EventDetailController.swift */; };
 		019882792441076000B6B4D6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019882782441076000B6B4D6 /* TableViewController.swift */; };
 		0198827B2441088D00B6B4D6 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198827A2441088D00B6B4D6 /* SettingsController.swift */; };
-		01CAA2E2244E80AE00310FAA /* CalendarEventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAA2E1244E80AE00310FAA /* CalendarEventsManager.swift */; };
-		01CAA2E4244EA07400310FAA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAA2E3244EA07400310FAA /* TableViewCell.swift */; };
+		01A16C8C24527BE10079233F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A16C8B24527BE10079233F /* MapViewController.swift */; };
 		01CEF7B42449600F00D75F9E /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B32449600F00D75F9E /* Attendee.swift */; };
 		01CEF7B62449601800D75F9E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B52449601800D75F9E /* Event.swift */; };
 		01CEF7B82449602800D75F9E /* StartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B72449602800D75F9E /* StartTime.swift */; };
@@ -26,15 +25,13 @@
 		98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */; };
 		98CAFF8C2436A05900EF4CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8B2436A05900EF4CDC /* Assets.xcassets */; };
 		98CAFF8F2436A05900EF4CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */; };
-		98D32FC224492B7A00AC6612 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D32FC124492B7A00AC6612 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		019882762440F6F200B6B4D6 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
 		019882782441076000B6B4D6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0198827A2441088D00B6B4D6 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		01CAA2E1244E80AE00310FAA /* CalendarEventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventsManager.swift; sourceTree = "<group>"; };
-		01CAA2E3244EA07400310FAA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		01A16C8B24527BE10079233F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		01CEF7B32449600F00D75F9E /* Attendee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendee.swift; sourceTree = "<group>"; };
 		01CEF7B52449601800D75F9E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		01CEF7B72449602800D75F9E /* StartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTime.swift; sourceTree = "<group>"; };
@@ -53,7 +50,6 @@
 		98CAFF8B2436A05900EF4CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CAFF8E2436A05900EF4CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CAFF902436A05900EF4CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98D32FC124492B7A00AC6612 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,17 +110,15 @@
 				98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */,
 				98CAFF812436A05700EF4CDC /* SceneDelegate.swift */,
 				98CAFF832436A05700EF4CDC /* ViewController.swift */,
-				98D32FC124492B7A00AC6612 /* MapViewController.swift */,
+				01A16C8B24527BE10079233F /* MapViewController.swift */,
 				98CAFF852436A05700EF4CDC /* Main.storyboard */,
 				98CAFF8B2436A05900EF4CDC /* Assets.xcassets */,
 				98CAFF8D2436A05900EF4CDC /* LaunchScreen.storyboard */,
 				98CAFF902436A05900EF4CDC /* Info.plist */,
 				98CAFF882436A05700EF4CDC /* mapd_io.xcdatamodeld */,
-				01CAA2E3244EA07400310FAA /* TableViewCell.swift */,
 				019882762440F6F200B6B4D6 /* EventDetailController.swift */,
 				019882782441076000B6B4D6 /* TableViewController.swift */,
 				0198827A2441088D00B6B4D6 /* SettingsController.swift */,
-				01CAA2E1244E80AE00310FAA /* CalendarEventsManager.swift */,
 			);
 			path = "mapd-io";
 			sourceTree = "<group>";
@@ -254,20 +248,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CAFF842436A05700EF4CDC /* ViewController.swift in Sources */,
-				01CAA2E4244EA07400310FAA /* TableViewCell.swift in Sources */,
 				019882792441076000B6B4D6 /* TableViewController.swift in Sources */,
 				98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */,
-				98D32FC224492B7A00AC6612 /* MapViewController.swift in Sources */,
 				01CEF7BE2449607A00D75F9E /* CalendarAPIData.swift in Sources */,
 				01CEF7B62449601800D75F9E /* Event.swift in Sources */,
 				01CEF7B82449602800D75F9E /* StartTime.swift in Sources */,
-				01CAA2E2244E80AE00310FAA /* CalendarEventsManager.swift in Sources */,
 				01CEF7BC2449606B00D75F9E /* Creator.swift in Sources */,
 				0198827B2441088D00B6B4D6 /* SettingsController.swift in Sources */,
 				98CAFF802436A05700EF4CDC /* AppDelegate.swift in Sources */,
 				01CEF7B42449600F00D75F9E /* Attendee.swift in Sources */,
 				98CAFF822436A05700EF4CDC /* SceneDelegate.swift in Sources */,
 				01CEF7BA2449603100D75F9E /* EndTime.swift in Sources */,
+				01A16C8C24527BE10079233F /* MapViewController.swift in Sources */,
 				019882772440F6F200B6B4D6 /* EventDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
