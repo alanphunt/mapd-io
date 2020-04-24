@@ -11,6 +11,13 @@ import UIKit
 
 class SettingsController: UIViewController{
     
+    @IBAction func GoogleCalendarSwitch(_ sender: Any) {
+        
+    }
+    @IBAction func PushNotificationsSwitch(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
