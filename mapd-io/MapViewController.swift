@@ -14,7 +14,7 @@ import CoreLocation
 class MapViewController: UIViewController {
 
     let locationManager = CLLocationManager()
-    var location: CLLocation? = nil
+    var clLocation: CLLocation? = nil
 
     @IBOutlet weak var viewForGMap: UIView!
     
@@ -24,6 +24,7 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addNavBarImage()
         let df = DateFormatter()
         df.dateFormat = "MM.dd.yyyy"
         let cem = CalendarEventsManager.cem.events
@@ -62,7 +63,24 @@ class MapViewController: UIViewController {
         }
         
     }
-    
+    func addNavBarImage() {
+        
+        let navController = navigationController!
+        
+        let image = #imageLiteral(resourceName: "LogoImage")
+        let imageView = UIImageView(image: image)
+        
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        
+        let bannerX = bannerWidth / 2 - image.size.width / 2
+        let bannerY = bannerHeight / 2 - image.size.height / 2
+        
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
+    }
 
 }
 
@@ -101,7 +119,7 @@ extension MapViewController: CLLocationManagerDelegate {
            print(location.speed, "Speed")
            print(location.timestamp, "Timestamp")
            
-           self.location = location
+           self.clLocation = location
        }
    }
 }
