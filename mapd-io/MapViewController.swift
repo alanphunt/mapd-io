@@ -13,8 +13,6 @@ import CoreLocation
 
 class MapViewController: UIViewController {
 
-
-
     @IBOutlet weak var viewForGMap: UIView!
     
     @IBOutlet weak var eventTitle: UILabel!
@@ -29,6 +27,7 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addNavBarImage()
         let cem = CalendarEventsManager.cem.events
 
         let camera = GMSCameraPosition.camera(withLatitude: 40.508681, longitude: -88.991202, zoom: 16.0)
@@ -45,7 +44,7 @@ class MapViewController: UIViewController {
         self.view.addSubview(mapView)
 
         mapView.isMyLocationEnabled = true
-
+        
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(cem[0].location) {
             placemarks, error in
@@ -58,11 +57,29 @@ class MapViewController: UIViewController {
             marker.title = cem[0].summary
             marker.map = mapView
 
-
             dm.getDirectionData(completion: { (json) in
              print(json)
             })
         }
+    }
+
+    func addNavBarImage() {
+        
+        let navController = navigationController!
+        
+        let image = #imageLiteral(resourceName: "LogoImage")
+        let imageView = UIImageView(image: image)
+        
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        
+        let bannerX = bannerWidth / 2 - image.size.width / 2
+        let bannerY = bannerHeight / 2 - image.size.height / 2
+        
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
     }
 
 }
