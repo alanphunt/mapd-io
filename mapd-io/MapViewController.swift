@@ -13,56 +13,56 @@ import CoreLocation
 
 class MapViewController: UIViewController {
 
-    let locationManager = CLLocationManager()
-    var clLocation: CLLocation? = nil
-
     @IBOutlet weak var viewForGMap: UIView!
     
     @IBOutlet weak var eventTitle: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var startTime: UILabel!
     
+
+    var lat:Double?
+    var lon:Double?
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavBarImage()
-        let df = DateFormatter()
-        df.dateFormat = "MM.dd.yyyy"
         let cem = CalendarEventsManager.cem.events
-        
-        self.eventTitle.text = cem[0].summary
-        self.location.text = cem[0].location
-        
-        self.startTime.text =  df.string(for: cem[0].start.dateTime)
-        
-        
-        // Do any additional setup after loading the view.
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
 
         let camera = GMSCameraPosition.camera(withLatitude: 40.508681, longitude: -88.991202, zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: self.viewForGMap.frame, camera: camera)
+        let dm = DistanceManager.dm
+        let df = DateFormatter()
+        df.dateFormat = "MM.dd.yyyy"
+        self.eventTitle.text = cem[0].summary
+        self.location.text = cem[0].location
+        self.startTime.text =  df.string(for: cem[0].start.dateTime)
+
+          
         mapView.settings.myLocationButton = true
         self.view.addSubview(mapView)
 
         mapView.isMyLocationEnabled = true
-
-        // Creates a marker in the center of the map. ** will possibly be used **
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
-
-        //location services
-        locationManager.delegate = self
         
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(cem[0].location) {
+            placemarks, error in
+            let placemark = placemarks?.first
+            dm.lat2 = placemark?.location?.coordinate.latitude
+            dm.lon2 = placemark?.location?.coordinate.longitude
+
+            let position = CLLocationCoordinate2D(latitude: dm.lat2!, longitude: dm.lon2!) // fix so that when nill it does not terminate the application
+            let marker = GMSMarker(position: position)
+            marker.title = cem[0].summary
+            marker.map = mapView
+
+            dm.getDirectionData(completion: { (json) in
+             print(json)
+            })
         }
-        
     }
+
     func addNavBarImage() {
         
         let navController = navigationController!
@@ -82,44 +82,4 @@ class MapViewController: UIViewController {
         navigationItem.titleView = imageView
     }
 
-}
-
-extension MapViewController: CLLocationManagerDelegate {
-    // called when the authorization status is changed for the core location permission
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        print("location manager authorization status changed")
-        
-        switch status {
-        case .authorizedAlways:
-            print("user allow app to get location data when app is active or in background")
-            if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
-                if CLLocationManager.isRangingAvailable() {
-                }
-            }
-        case .authorizedWhenInUse:
-            return
-        case .denied:
-            // show alert that location is needed?
-            return
-        case .restricted:
-            return
-        case .notDetermined:
-            locationManager.requestAlwaysAuthorization()
-            return
-        default:
-            return
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-       if let location = locations.last {
-           print(location.coordinate, "Coordinate")
-           print(location.horizontalAccuracy, "Coordinate Accuracy")
-           print(location.course, "Course")
-           print(location.speed, "Speed")
-           print(location.timestamp, "Timestamp")
-           
-           self.clLocation = location
-       }
-   }
 }

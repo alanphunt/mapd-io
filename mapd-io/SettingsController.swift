@@ -11,15 +11,29 @@ import UIKit
 
 class SettingsController: UIViewController{
     
-    @IBAction func GoogleCalendarSwitch(_ sender: Any) {
+    let asm = AppSettingsManager.asm
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var googleSwitch: UISwitch!
+    @IBOutlet weak var locationEnabledSwitch: UISwitch!
+    @IBOutlet weak var notificationSwitch: UISwitch!
+    
+    @IBAction func GoogleCalendarSwitch(_ sender: UISwitch!) {
         
     }
-    @IBAction func PushNotificationsSwitch(_ sender: Any) {
+    
+    @IBAction func PushNotificationsSwitch(_ sender: UISwitch!) {
+        
+    }
+    
+    @IBAction func locationSwitch(_ sender: UISwitch) {
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         addNavBarImage()
         
     }
@@ -40,5 +54,11 @@ class SettingsController: UIViewController{
         imageView.contentMode = .scaleAspectFit
         
         navigationItem.titleView = imageView
+
+        emailLabel.text = asm.gmail
+        googleSwitch.setOn(asm.gmail != "", animated: true)
+        locationEnabledSwitch.setOn(asm.locationEnabled, animated: true)
+        notificationSwitch.setOn(asm.pushEnabled, animated: true)
+
     }
 }

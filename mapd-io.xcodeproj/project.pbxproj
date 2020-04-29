@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016941ED2459035700187CDD /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016941EC2459035700187CDD /* AppSettingsManager.swift */; };
+		016941EF245914AB00187CDD /* Step1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016941EE245914AB00187CDD /* Step1Controller.swift */; };
+		016941F2245914DB00187CDD /* Step2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016941F1245914DB00187CDD /* Step2Controller.swift */; };
+		016941F4245914EE00187CDD /* Step3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016941F3245914EE00187CDD /* Step3Controller.swift */; };
+		016941F72459603900187CDD /* DirectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016941F62459603900187CDD /* DirectionData.swift */; };
 		019882772440F6F200B6B4D6 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019882762440F6F200B6B4D6 /* EventDetailController.swift */; };
 		019882792441076000B6B4D6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019882782441076000B6B4D6 /* TableViewController.swift */; };
 		0198827B2441088D00B6B4D6 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198827A2441088D00B6B4D6 /* SettingsController.swift */; };
 		01A16C8C24527BE10079233F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A16C8B24527BE10079233F /* MapViewController.swift */; };
+		01A16C8E24528A690079233F /* CalendarEventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A16C8D24528A690079233F /* CalendarEventsManager.swift */; };
+		01A16C9024528AC30079233F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A16C8F24528AC30079233F /* TableViewCell.swift */; };
+		01C068F12459F88000C4B09C /* DistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C068F02459F88000C4B09C /* DistanceManager.swift */; };
 		01CEF7B42449600F00D75F9E /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B32449600F00D75F9E /* Attendee.swift */; };
 		01CEF7B62449601800D75F9E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B52449601800D75F9E /* Event.swift */; };
 		01CEF7B82449602800D75F9E /* StartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEF7B72449602800D75F9E /* StartTime.swift */; };
@@ -30,10 +38,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		016941EC2459035700187CDD /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
+		016941EE245914AB00187CDD /* Step1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1Controller.swift; sourceTree = "<group>"; };
+		016941F1245914DB00187CDD /* Step2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2Controller.swift; sourceTree = "<group>"; };
+		016941F3245914EE00187CDD /* Step3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3Controller.swift; sourceTree = "<group>"; };
+		016941F62459603900187CDD /* DirectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionData.swift; sourceTree = "<group>"; };
 		019882762440F6F200B6B4D6 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
 		019882782441076000B6B4D6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0198827A2441088D00B6B4D6 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		01A16C8B24527BE10079233F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		01A16C8D24528A690079233F /* CalendarEventsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEventsManager.swift; sourceTree = "<group>"; };
+		01A16C8F24528AC30079233F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		01C068F02459F88000C4B09C /* DistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceManager.swift; sourceTree = "<group>"; };
 		01CEF7B32449600F00D75F9E /* Attendee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendee.swift; sourceTree = "<group>"; };
 		01CEF7B52449601800D75F9E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		01CEF7B72449602800D75F9E /* StartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTime.swift; sourceTree = "<group>"; };
@@ -68,9 +84,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		016941F0245914BA00187CDD /* Step Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				016941EE245914AB00187CDD /* Step1Controller.swift */,
+				016941F1245914DB00187CDD /* Step2Controller.swift */,
+				016941F3245914EE00187CDD /* Step3Controller.swift */,
+			);
+			path = "Step Controllers";
+			sourceTree = "<group>";
+		};
+		016941F524595F4C00187CDD /* DirectionModels */ = {
+			isa = PBXGroup;
+			children = (
+				016941F62459603900187CDD /* DirectionData.swift */,
+			);
+			path = DirectionModels;
+			sourceTree = "<group>";
+		};
 		01CEF7B224495FE100D75F9E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				016941F524595F4C00187CDD /* DirectionModels */,
 				01CEF7B32449600F00D75F9E /* Attendee.swift */,
 				01CEF7B52449601800D75F9E /* Event.swift */,
 				01CEF7B72449602800D75F9E /* StartTime.swift */,
@@ -110,9 +145,12 @@
 		98CAFF7E2436A05700EF4CDC /* mapd-io */ = {
 			isa = PBXGroup;
 			children = (
+				016941F0245914BA00187CDD /* Step Controllers */,
 				01CEF7B224495FE100D75F9E /* Models */,
 				98CAFF7F2436A05700EF4CDC /* AppDelegate.swift */,
 				98CAFF812436A05700EF4CDC /* SceneDelegate.swift */,
+				01A16C8D24528A690079233F /* CalendarEventsManager.swift */,
+				01A16C8F24528AC30079233F /* TableViewCell.swift */,
 				98CAFF832436A05700EF4CDC /* ViewController.swift */,
 				01A16C8B24527BE10079233F /* MapViewController.swift */,
 				98CAFF852436A05700EF4CDC /* Main.storyboard */,
@@ -125,6 +163,8 @@
 				019882782441076000B6B4D6 /* TableViewController.swift */,
 				98B99A302458E4F400EE2DCD /* TableViewCell.swift */,
 				0198827A2441088D00B6B4D6 /* SettingsController.swift */,
+				016941EC2459035700187CDD /* AppSettingsManager.swift */,
+				01C068F02459F88000C4B09C /* DistanceManager.swift */,
 			);
 			path = "mapd-io";
 			sourceTree = "<group>";
@@ -254,21 +294,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CAFF842436A05700EF4CDC /* ViewController.swift in Sources */,
-				98B99A312458E4F400EE2DCD /* TableViewCell.swift in Sources */,
+				016941EF245914AB00187CDD /* Step1Controller.swift in Sources */,
+				01A16C9024528AC30079233F /* TableViewCell.swift in Sources */,
 				019882792441076000B6B4D6 /* TableViewController.swift in Sources */,
 				98CAFF8A2436A05700EF4CDC /* mapd_io.xcdatamodeld in Sources */,
 				01CEF7BE2449607A00D75F9E /* CalendarAPIData.swift in Sources */,
 				01CEF7B62449601800D75F9E /* Event.swift in Sources */,
+				016941F4245914EE00187CDD /* Step3Controller.swift in Sources */,
 				01CEF7B82449602800D75F9E /* StartTime.swift in Sources */,
 				01CEF7BC2449606B00D75F9E /* Creator.swift in Sources */,
-				98B99A2F2458E1E500EE2DCD /* CalendarEventsManager.swift in Sources */,
+				01A16C8E24528A690079233F /* CalendarEventsManager.swift in Sources */,
+
 				0198827B2441088D00B6B4D6 /* SettingsController.swift in Sources */,
 				98CAFF802436A05700EF4CDC /* AppDelegate.swift in Sources */,
 				01CEF7B42449600F00D75F9E /* Attendee.swift in Sources */,
 				98CAFF822436A05700EF4CDC /* SceneDelegate.swift in Sources */,
+				016941F2245914DB00187CDD /* Step2Controller.swift in Sources */,
+				01C068F12459F88000C4B09C /* DistanceManager.swift in Sources */,
 				01CEF7BA2449603100D75F9E /* EndTime.swift in Sources */,
+				016941F72459603900187CDD /* DirectionData.swift in Sources */,
 				01A16C8C24527BE10079233F /* MapViewController.swift in Sources */,
 				019882772440F6F200B6B4D6 /* EventDetailController.swift in Sources */,
+				016941ED2459035700187CDD /* AppSettingsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
