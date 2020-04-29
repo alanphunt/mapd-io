@@ -44,7 +44,7 @@ class TableViewController: UITableViewController{
         let cell = tv.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
         let df = DateFormatter()
-        df.dateFormat = "hh:MM"
+        df.dateFormat = "hh:mm"
         
         if(indexPath.section == 0){
             cell.label.text = CalendarEventsManager.cem.events[indexPath.row].summary
