@@ -15,6 +15,7 @@ class TableViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addNavBarImage()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,7 +45,7 @@ class TableViewController: UITableViewController{
         let cell = tv.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
         let df = DateFormatter()
-        df.dateFormat = "hh:mm"
+        df.dateFormat = "HH:mm"
         
         if(indexPath.section == 0){
             cell.label.text = CalendarEventsManager.cem.events[indexPath.row].summary
@@ -72,6 +73,26 @@ class TableViewController: UITableViewController{
             self.navigationController?.pushViewController(vc!, animated: true)
         }
     
+    }
+    
+    
+    func addNavBarImage() {
+        
+        let navController = navigationController!
+        
+        let image = #imageLiteral(resourceName: "Image-1")
+        let imageView = UIImageView(image: image)
+        
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        
+        let bannerX = bannerWidth / 2 - image.size.width / 2
+        let bannerY = bannerHeight / 2 - image.size.height / 2
+        
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
     }
     
 }

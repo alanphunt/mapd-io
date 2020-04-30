@@ -14,7 +14,7 @@ class ViewController: UITabBarController, CLLocationManagerDelegate {
 
     override func viewDidLoad(){
 
-        Thread.sleep(forTimeInterval: 2.0 )
+        Thread.sleep(forTimeInterval: 1.0 )
         dm.locationManager = CLLocationManager()
         dm.locationManager?.requestWhenInUseAuthorization()
 

@@ -55,12 +55,25 @@ struct Step{
     var distance:Distance
     var duration:Duration
     var polyline:Polyline
+    var endLocation:End_Location
 }
-
 
 extension Step: Decodable{
     enum CodingKeys: String, CodingKey{
         case distance, duration, polyline
+        case endLocation = "end_location"
+    }
+}
+
+struct End_Location{
+    var lat:Double
+    var lng:Double
+
+}
+
+extension End_Location: Decodable{
+    enum CodingKeys: String, CodingKey{
+        case lat, lng
     }
 }
 
