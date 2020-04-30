@@ -21,7 +21,9 @@ class DistanceManager{
     
     
     func getDirectionData(completion: @escaping (DirectionData) -> ()){
-        let url = URL(string:"https://maps.googleapis.com/maps/api/directions/json?origin=\(lat1!)%2C\(lon1!)&destination=\(lat2!)%2C\(lon2!)&mode=walking&key=AIzaSyC1s0Z-fmBf2cLX1Ho7_nVs8XHdb4xkA88")!
+        let milLat = 40.511338
+        let milLon = -88.990862
+        let url = URL(string:"https://maps.googleapis.com/maps/api/directions/json?origin=\(/*lat1!*/milLat)%2C\(/*lon1!*/milLon)&destination=\(lat2!)%2C\(lon2!)&mode=walking&key=AIzaSyC1s0Z-fmBf2cLX1Ho7_nVs8XHdb4xkA88")!
             print(url)
 
             URLSession.shared.dataTask(with: url) { (data, res, err) in

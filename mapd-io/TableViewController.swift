@@ -45,7 +45,7 @@ class TableViewController: UITableViewController{
         let cell = tv.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
         let df = DateFormatter()
-        df.dateFormat = "hh:mm"
+        df.dateFormat = "HH:mm"
         
         if(indexPath.section == 0){
             cell.label.text = CalendarEventsManager.cem.events[indexPath.row].summary
@@ -74,11 +74,12 @@ class TableViewController: UITableViewController{
         }
     
     }
+
     func addNavBarImage() {
         
         let navController = navigationController!
         
-        let image = #imageLiteral(resourceName: "LogoImage")
+        let image = #imageLiteral(resourceName: "Image-1")
         let imageView = UIImageView(image: image)
         
         let bannerWidth = navController.navigationBar.frame.size.width

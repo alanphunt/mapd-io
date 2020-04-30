@@ -35,13 +35,20 @@ class SettingsController: UIViewController{
         super.viewDidLoad()
 
         addNavBarImage()
-        
+
+        emailLabel.text = asm.gmail
+        googleSwitch.setOn(asm.gmail != "", animated: true)
+        locationEnabledSwitch.setOn(asm.locationEnabled, animated: true)
+        notificationSwitch.setOn(asm.pushEnabled, animated: true)
+
     }
+    
+    
     func addNavBarImage() {
         
         let navController = navigationController!
         
-        let image = #imageLiteral(resourceName: "LogoImage")
+        let image = #imageLiteral(resourceName: "Image-1")
         let imageView = UIImageView(image: image)
         
         let bannerWidth = navController.navigationBar.frame.size.width
@@ -54,11 +61,5 @@ class SettingsController: UIViewController{
         imageView.contentMode = .scaleAspectFit
         
         navigationItem.titleView = imageView
-
-        emailLabel.text = asm.gmail
-        googleSwitch.setOn(asm.gmail != "", animated: true)
-        locationEnabledSwitch.setOn(asm.locationEnabled, animated: true)
-        notificationSwitch.setOn(asm.pushEnabled, animated: true)
-
     }
 }

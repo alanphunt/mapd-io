@@ -23,7 +23,7 @@ class Step1Controller: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         
-        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Entity")
+//        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Entity")
 //        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
 //        do {
 //            try asm.context.execute(deleteRequest)
@@ -63,7 +63,7 @@ class Step1Controller: UIViewController{
             newEntity.setValue(emailInput.text!, forKey: "email")
             do{
                 try context.save()
-                print("saved")
+                print("saved email")
             }catch{
                 print("failed saving")
             }
@@ -78,7 +78,7 @@ class Step1Controller: UIViewController{
     
     func callEvents(){
         CalendarEventsManager.cem.getJson{(json) in
-            CalendarEventsManager.cem.events = json.items.filter{$0.end.dateTime >= Date()}
+            CalendarEventsManager.cem.events = json.items.filter{$0.end.dateTime >= Date()}.sorted(by: { $0.start.dateTime < $1.start.dateTime})
             
             if(CalendarEventsManager.cem.events.count == 0){
                 CalendarEventsManager.cem.events = [Event(location: "No location", summary: "No event", description: "No event", start: StartTime(dateTime: Date()), end: EndTime(dateTime: Date()), creator: Creator(email: "no email"))]

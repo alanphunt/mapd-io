@@ -21,7 +21,7 @@ class EventDetailController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavBarImage()
-        
+
         let df = DateFormatter()
         df.dateFormat = "MM.dd.yyyy hh:mm"
         
@@ -37,11 +37,12 @@ class EventDetailController: UIViewController{
         eventLocation.text = event?.location
         eventTitle.text = event?.summary
     }
+
     func addNavBarImage() {
         
         let navController = navigationController!
-        
-        let image = #imageLiteral(resourceName: "LogoImage")
+
+        let image = #imageLiteral(resourceName: "Image-1")
         let imageView = UIImageView(image: image)
         
         let bannerWidth = navController.navigationBar.frame.size.width
